@@ -39,6 +39,13 @@ export default {
           DEFAULT: "hsl(var(--accent))",
           foreground: "hsl(var(--accent-foreground))",
         },
+        portal: {
+          red: "hsl(var(--portal-red))",
+          "red-foreground": "hsl(var(--portal-red-foreground))",
+          blue: "hsl(var(--portal-blue))",
+          "blue-dark": "hsl(var(--portal-blue-dark))",
+          overlay: "hsl(var(--portal-overlay))",
+        },
         popover: {
           DEFAULT: "hsl(var(--popover))",
           foreground: "hsl(var(--popover-foreground))",
