@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import { 
   ThumbsUp, 
   Cloud, 
@@ -9,14 +10,16 @@ import {
 } from "lucide-react";
 
 const NavigationGrid = () => {
+  const navigate = useNavigate();
+  
   const navItems = [
-    { icon: ThumbsUp, label: "Approvals &", sublabel: "Requests" },
-    { icon: Cloud, label: "Content", sublabel: "Uploader" },
-    { icon: Monitor, label: "Computer", sublabel: "Admin" },
-    { icon: ClipboardList, label: "Assignment", sublabel: "Tool" },
-    { icon: Calendar, label: "Event", sublabel: "Management" },
-    { icon: Users, label: "Cohorts &", sublabel: "Communities" },
-    { icon: Network, label: "Organizational", sublabel: "Units" },
+    { icon: ThumbsUp, label: "Approvals &", sublabel: "Requests", path: "/approvals-requests" },
+    { icon: Cloud, label: "Content", sublabel: "Uploader", path: "/content-uploader" },
+    { icon: Monitor, label: "Computer", sublabel: "Admin", path: "/computer-admin" },
+    { icon: ClipboardList, label: "Assignment", sublabel: "Tool", path: "/assignment-tool" },
+    { icon: Calendar, label: "Event", sublabel: "Management", path: "/event-management" },
+    { icon: Users, label: "Cohorts &", sublabel: "Communities", path: "/cohorts-communities" },
+    { icon: Network, label: "Organizational", sublabel: "Units", path: "/organizational-units" },
   ];
 
   return (
@@ -25,6 +28,7 @@ const NavigationGrid = () => {
         {navItems.map((item, index) => (
           <div 
             key={index} 
+            onClick={() => navigate(item.path)}
             className="flex flex-col items-center text-center cursor-pointer hover:bg-muted/50 p-4 rounded-lg transition-colors"
           >
             <item.icon className="w-10 h-10 text-primary mb-3" />
