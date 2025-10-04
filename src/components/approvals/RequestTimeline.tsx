@@ -2,7 +2,7 @@ import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { MessageSquare, CheckCircle, XCircle, Send, FileText } from "lucide-react";
-import type { Request } from "@/pages/ApprovalsRequests";
+import type { Request } from "@/types/approvals";
 import { format } from "date-fns";
 import { fr } from "date-fns/locale";
 

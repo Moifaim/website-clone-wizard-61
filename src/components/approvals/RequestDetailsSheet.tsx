@@ -6,7 +6,7 @@ import { Separator } from "@/components/ui/separator";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { CheckCircle, XCircle, UserPlus, Paperclip, MessageSquare } from "lucide-react";
-import type { Request, RequestStatus } from "@/pages/ApprovalsRequests";
+import type { Request, RequestStatus } from "@/types/approvals";
 import { ApproveDialog } from "./ApproveDialog";
 import { RejectDialog } from "./RejectDialog";
 import { DelegateDialog } from "./DelegateDialog";

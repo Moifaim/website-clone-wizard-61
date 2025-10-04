@@ -4,7 +4,7 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 import { CheckCircle, XCircle, Clock } from "lucide-react";
-import type { Request, RequestStatus } from "@/pages/ApprovalsRequests";
+import type { Request, RequestStatus } from "@/types/approvals";
 import { formatDistanceToNow } from "date-fns";
 import { fr } from "date-fns/locale";
 

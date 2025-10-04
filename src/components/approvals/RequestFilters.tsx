@@ -3,7 +3,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Search } from "lucide-react";
-import type { RequestStatus } from "@/pages/ApprovalsRequests";
+import type { RequestStatus } from "@/types/approvals";
 
 interface RequestFiltersProps {
   statusFilter: RequestStatus[];
